@@ -11,7 +11,7 @@ double[,] GetArray(int m, int n, int minValue, int maxValue)
     
     for (int i = 0; i<m; i++)
         for(int j=0; j<n; j++)
-           arrays[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
+           arrays[i, j] = Convert.ToDouble(new Random().Next(minValue, maxValue)) / 10;
 
     return arrays;
     
@@ -28,5 +28,5 @@ void PrintArray(double[,] array)
 }
 
 
-double[,] myArray = GetArray(m, n, -10, 10);
+double[,] myArray = GetArray(m, n, -100, 100);
 PrintArray(myArray);
