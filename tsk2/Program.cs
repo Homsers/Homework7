@@ -24,7 +24,7 @@ void PrintArray(int[,] array)
         Console.Write($"{array[i, j]} ");
         Console.WriteLine();
         if (s == array.GetLength(0)-1 | c == array.GetLength(1))
-        Console.WriteLine("Number of element is {0}", array[s,c]);
+        Console.WriteLine();
     }
 }
 
